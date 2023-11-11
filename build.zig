@@ -8,7 +8,7 @@ pub fn build(b: *std.Build) void {
         .name = "tchan",
         .root_source_file = .{ .path = "src/main.zig" },
         .target = target,
-        .optimize = optimize,
+        .optimize = .ReleaseFast,
     });
 
     b.installArtifact(exe);
